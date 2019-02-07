@@ -13,8 +13,82 @@ It reuses the same memory paging mechanism I've implemented in Zeta SBC V2, but 
   * Zilog Z80 SIO - Dual channel serial interface, used for console and for connecting to other peripheral devices
 * Bus: [RC2014](https://rc2014.co.uk/) compatible
 
-### Jumpers, Connectors, and Switches
-To be completed
+## Hardware Documentation
+
+### Schematic and PCB Layout
+
+### Connectors and Jumpers
+
+#### J1 - Power
+Connect regulated +5V power supply to this connector.
+
+Pin                     | Signal Name | Description
+----------------------- | ----------- | -----------
+Tip (the inner contact)	| VCC         | Positive terminal - +5V
+Barrel / sleeve	        | GND         | Negative terminal - ground
+
+#### J2, J3 - Serial Channel A and Serial Channel B
+Pin    | Signal Name | Description
+------ | ----------- | -----------
+1	     | DCD         |	Carrier Detect; Not used - Not connected on the SBC
+2	     | RXA, RXB    |	Receive Data; Input to SBC
+3	     | TXA, TXB    |	Transmit Data; Output from SBC
+4	     | DTR         |	Data Terminal Ready; Not used - Not connected on the SBC
+5	     | GND         |	Connected to the SBC GND signal
+6	     | DSR         | Data Set Ready; Not used - Not connected on the SBC
+7      |	RTSA, RTSB  | Request to Send; Output from SBC
+8	     | CTSA, CTSB  | Clear to Send; Input to SBC
+9	     | RI	         | Ring Indicator; Not used - Not connected on the SBC
+Shield	| DE9 Shield	 | Connected to the SBC GND signal
+
+#### J4 - NVRAM Battery
+Pin | Signal Name | Description
+--- | ----------- | -----------
+1  	| VBAT        | Positive terminal - +3V
+2   | GND         | Negative terminal - ground
+
+#### J5, J6, J7 - RC2014 Bus
+Pin   | Signal Name | Description         | Pin  | Signal Name | Description
+----- | ----------- | ------------------- | ---- | ----------- | -----------
+J5-1  | A15         | Address A15; Output |      |             |
+J5-2  | A14         | Address A14; Output |      |             |
+J5-3  | A13         | Address A13; Output |      |             |
+J5-4  | A12         | Address A12; Output |      |             |
+J5-5  | A11         | Address A11; Output |      |             |
+J5-6  | A10         | Address A10; Output |      |             |
+J5-7  | A9          | Address A9; Output  |      |             |
+J5-8  | A8          | Address A8; Output  |      |             |
+J5-9  | A7          | Address A7; Output  |      |             |
+J5-10 | A6          | Address A6; Output  |      |             |
+J5-11 | A5          | Address A5; Output  |      |             |
+J5-12 | A4          | Address A4; Output  |      |             |
+J5-13 | A3          | Address A3; Output  |      |             |
+J5-14 | A2          | Address A2; Output  |      |             |
+J5-15 | A1          | Address A1; Output  |      |             |
+J5-16 | A0          | Address A0; Output  |      |             |
+J5-17 | GND         | Ground              | J6-1 | GND         | Ground
+J5-18 | VCC         | Power Supply - +5V  | J6-2 | VCC         | Power Supply - +5V
+J5-19 | /M1         | Machine Cycle One; Output | J6-3| /RFSH | DRAM refresh; Output
+J5-20 | /RESET      | Reset; Output       | J6-4 | N/C         | Not connected
+J5-21 | CPU_CLK     | CPU Clock; Output   | J6-5 | UART_CLK    | UART Clock (1.8432 MHz); Output
+J5-22 | /INT        | Interrupt; Input    | J6-6 | /BUSACK     | DMA Bus Acknowledge; Output
+J5-23 | /MREQ       | Memory Request; Output | J6-8 | /HALT    | Halt; Output
+J5-24 | /WR         | Write Request; Output | J6-9 | /WAIT     | Wait; Input
+J5-25 | /RD         | Read Request; Output | J6-10 | /NMI      | Non-maskable Interrupt; Input
+J5-26 | /IORQ       | Input/Output Request; Output | |         |
+J5-27 | D0          | Data D0; Input/Output |    |             |
+J5-28 | D1          | Data D1; Input/Output |    |             |
+J5-29 | D2          | Data D2; Input/Output |    |             |
+J5-30 | D3          | Data D3; Input/Output |    |             |
+J5-31 | D4          | Data D4; Input/Output |    |             |
+J5-32 | D5          | Data D5; Input/Output |    |             |
+J5-33 | D6          | Data D6; Input/Output |    |             |
+J5-34 | D7          | Data D7; Input/Output |    |             |
+J5-35 | TXDA        |                     | J7-1 | TXDB        |
+J5-36 | RXDA        |                     | J7-2 | RXDB        |
+J5-37 | USR1        |                     | J7-3 | USR5        |
+J5-38 | IEI         |                     | J7-4 | USR6        |
+J5-39 | IEO         |                     | J7-5 | USR7        |
 
 ### Bill of Materials - Version 1.0
 
