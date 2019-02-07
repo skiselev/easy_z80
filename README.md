@@ -5,6 +5,8 @@ An easy to build Zilog Z80 based single board computer
 My son Max asked me what does it take to build a computer, and whether he can design and build one himself. This project is our attempt to design and build a simple, easy to understand, yet capable single board computer.
 It reuses the same memory paging mechanism I've implemented in Zeta SBC V2, but uses Zilog Z80 peripheral ICs to make a consistent Zilog based design.
 
+![Easy Z80 PCB Rendering](images/PCB_Top_OshPark_Resized.png)
+
 ## Specifications
 * Processor: Zilog Z80 CPU (CMOS version - Z84C00)
 * Memory: 512 KiB battery-backed SRAM, 512 KiB Flash ROM
@@ -16,6 +18,10 @@ It reuses the same memory paging mechanism I've implemented in Zeta SBC V2, but 
 ## Hardware Documentation
 
 ### Schematic and PCB Layout
+
+[Schematic - Version 1.0](KiCad/Easy_Z80-Schematic-1.0.pdf)
+
+[PCB Layout - Version 1.0](KiCad/Easy_Z80-Board-1.0.pdf)
 
 ### Connectors and Jumpers
 
