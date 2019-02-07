@@ -84,11 +84,23 @@ J5-31 | D4          | Data D4; Input/Output |    |             |
 J5-32 | D5          | Data D5; Input/Output |    |             |
 J5-33 | D6          | Data D6; Input/Output |    |             |
 J5-34 | D7          | Data D7; Input/Output |    |             |
-J5-35 | TXDA        |                     | J7-1 | TXDB        |
-J5-36 | RXDA        |                     | J7-2 | RXDB        |
-J5-37 | USR1        |                     | J7-3 | USR5        |
-J5-38 | IEI         |                     | J7-4 | USR6        |
-J5-39 | IEO         |                     | J7-5 | USR7        |
+J5-35 | TXDA        | Channel A, Transmit Data; Output | J7-1 | TXDB | Channel B, Transmit Data; Output
+J5-36 | RXDA        | Channel A, Receive Data; Input   | J7-2 | RXDB | Channel B, Receive Data; Input
+J5-37 | USR1        | User Pin 1, Not connected | J7-3 | USR5  | User Pin 5, Not connected 
+J5-38 | IEI         | Interrupt Enable Input  | J7-4 | USR6    | User Pin 6, Not connected 
+J5-39 | IEO         | Interrupt Enable Output | J7-5 | USR7    | User Pin 7, Not connected 
+
+#### JP1 - Serial Channel A Clock Select
+Position        | Description
+--------------- | -----------
+*1-2 (default)* | 1.8432 MHz (115200 bps if using x16 mode)
+2-3             | Programmable using CTC channel 0
+
+#### JP2 - Serial Channel B Clock Select
+Position        | Description
+--------------- | -----------
+*1-2 (default)* | 1.8432 MHz (115200 bps if using x16 mode)
+2-3             | Programmable using CTC channel 1
 
 ### Bill of Materials - Version 1.0
 
