@@ -149,3 +149,13 @@ IC Socket          | U9        | 20 pin DIP                                  | 1
 IC Socket          | U6 - U8, U10, U11 | 16 pin DIP                          | 5        | Mouser [517-4816-3000-CP](https://www.mouser.com/ProductDetail/517-4816-3000-CP)
 IC Socket          | U12       | 14 pin DIP                                  | 1        | Mouser [517-4814-3000-CP](https://www.mouser.com/ProductDetail/517-4814-3000-CP)
 Oscillator Socket  | QG1, QG2  | 4 pin DIP, Half Can                         | 2        | Mouser [535-1108800](https://www.mouser.com/ProductDetail/535-1108800)
+
+## Firmware Documentation
+
+### BIOS and OS
+
+The current plan is to use [RomWBW](https://github.com/wwarthen/RomWBW), which includes BIOS and CP/M-80 2.2, Z-System. It also should be possible to run [FUZIX](https://github.com/EtchedPixels/FUZIX) on this board.
+
+### SPLD Fuse Map
+
+Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD fuse map](SPLD/easy_z80.jed) and the [SPLD source code](SPLD/easy_z80.pld) are provided in [SPLD](SPLD) directory of this repository.
