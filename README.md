@@ -159,3 +159,13 @@ The current plan is to use [RomWBW](https://github.com/wwarthen/RomWBW), which i
 ### SPLD Fuse Map
 
 Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD fuse map](SPLD/easy_z80.jed) and the [SPLD source code](SPLD/easy_z80.pld) are provided in [SPLD](SPLD) directory of this repository.
+
+## Changes
+* Version 1.0
+  * Initial version
+
+## Known Issues
+* Version 1.0
+  * Top silkscreen: RR1 reference and value are not visible. It should read "RR1, 4.7k"
+  * Bottom silkscreen on JP1 and JP2 covers the trace connections, so they are not easily visible
+  * Bottom silkscreen: No project URL. Should be [github.com/skiselev/easy_z80](https://github.com/skiselev/easy_z80)
