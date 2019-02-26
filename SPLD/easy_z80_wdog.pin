@@ -1,0 +1,25 @@
+
+
+ Pin # | Name     | Pin Type
+-----------------------------
+   1   | MREQ     | Input
+   2   | IORQ     | Input
+   3   | WR       | Input
+   4   | M1       | Input
+   5   | A2       | Input
+   6   | A3       | Input
+   7   | A4       | Input
+   8   | A5       | Input
+   9   | A6       | Input
+  10   | GND      | GND
+  11   | A7       | Input
+  12   | CTCCS    | Output
+  13   | SIOCS    | Output
+  14   | ROMCS    | Output
+  15   | PAGEWR   | Output
+  16   | PGENWR   | Output
+  17   | MA19     | Input
+  18   | WDOG     | Output
+  19   | RAMCSI   | Output
+  20   | VCC      | VCC
+
