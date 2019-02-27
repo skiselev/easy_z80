@@ -5,7 +5,7 @@ An easy to build Zilog Z80 based single board computer
 My son Max asked me what does it take to build a computer, and whether he can design and build one himself. This project is our attempt to design and build a simple, easy to understand, yet capable single board computer.
 It reuses the same memory paging mechanism I've implemented in Zeta SBC V2, but uses Zilog Z80 peripheral ICs to make a consistent Zilog based design.
 
-![Easy Z80 PCB Rendering](images/PCB_Top_OshPark_Resized.png)
+![Easy Z80 PCB Rendering](images/Easy_Z80-Assembled.jpg)
 
 ## Specifications
 * Processor: Zilog Z80 CPU (CMOS version - Z84C00)
@@ -135,7 +135,8 @@ Connector          | J1        | DC Power Jack, 2mm                          | 1
 Connector          | J2, J3    | Sub-D DE9M, Right Angle, PCB mount          | 2        | Mouser [806-K22X-E9P-N-99](https://www.mouser.com/ProductDetail/806-K22X-E9P-N-99)
 Connector          | J4        | 2 Pin Header with Friction Lock             | 1        | Mouser [571-6404562](https://www.mouser.com/ProductDetail/571-6404562)
 Pin Header         | J5 - J7   | 40x2 Pin Header, 2.54 mm Pitch, Right Angle | 1        | Mouser [571-9-103326-0](https://www.mouser.com/ProductDetail/571-9-103326-0)
-Capacitor          | C1 - C23  | 0.1 uF, MLCC, 5 mm Pitch                    | 23       | Mouser [594-K104K15X7RF53H5](https://www.mouser.com/ProductDetail/594-K104K15X7RF53H5)
+Capacitor          | C1 - C14, C16 - C23  | 0.1 uF, MLCC, 5 mm Pitch                    | 22       | Mouser [594-K104K15X7RF53H5](https://www.mouser.com/ProductDetail/594-K104K15X7RF53H5)
+Capacitor          | C15       | Do not populate                             | 1        | Do not populate this capacitor
 Capacitor          | C24       | 47 uF, 25V, Aluminum Organic Polymer        | 1        | Mouser [80-A750EK476M1EAAE40](https://www.mouser.com/ProductDetail/80-A750EK476M1EAAE40)
 Resistor Array     | RR1 - RR3 | 4.7 k, bussed, 5 pin SIP                    | 3        | Mouser [652-4605X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4605X-AP1-472LF)
 Resistor           | R1        | 470 ohm, axial                              | 1        | Mouser [603-MFR-25FBF52-470R](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-470R) 
@@ -169,3 +170,4 @@ Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD f
   * Top silkscreen: RR1 reference and value are not visible. It should read "RR1, 4.7k"
   * Bottom silkscreen on JP1 and JP2 covers the trace connections, so they are not easily visible
   * Bottom silkscreen: No project URL. Should be [github.com/skiselev/easy_z80](https://github.com/skiselev/easy_z80)
+  * Board will not reset when C15 is populated. Workaround: Do not populate this capacitor.
