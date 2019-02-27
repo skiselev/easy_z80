@@ -13,13 +13,13 @@
    9   | A6       | Input
   10   | GND      | GND
   11   | A7       | Input
-  12   | CTCCS    | Output
-  13   | SIOCS    | Output
-  14   | ROMCS    | Output
-  15   | PAGEWR   | Output
-  16   | PGENWR   | Output
-  17   | MA19     | Input
-  18   | WDOG     | Output
-  19   | RAMCSI   | Output
+  12   | RAMCSI   | Output
+  13   | WDOG     | Output
+  14   | MA19     | Input
+  15   | PGENWR   | Output
+  16   | PAGEWR   | Output
+  17   | ROMCS    | Output
+  18   | SIOCS    | Output
+  19   | CTCCS    | Output
   20   | VCC      | VCC
 

@@ -5,21 +5,21 @@
                           -------\___/-------
                      MREQ |  1           20 | VCC
                           |                 |
-                     IORQ |  2           19 | RAMCSI
+                     IORQ |  2           19 | CTCCS
                           |                 |
-                       WR |  3           18 | WDOG
+                       WR |  3           18 | SIOCS
                           |                 |
-                       M1 |  4           17 | MA19
+                       M1 |  4           17 | ROMCS
                           |                 |
-                       A2 |  5           16 | PGENWR
+                       A2 |  5           16 | PAGEWR
                           |                 |
-                       A3 |  6           15 | PAGEWR
+                       A3 |  6           15 | PGENWR
                           |                 |
-                       A4 |  7           14 | ROMCS
+                       A4 |  7           14 | MA19
                           |                 |
-                       A5 |  8           13 | SIOCS
+                       A5 |  8           13 | WDOG
                           |                 |
-                       A6 |  9           12 | CTCCS
+                       A6 |  9           12 | RAMCSI
                           |                 |
                       GND | 10           11 | A7
                           -------------------
