@@ -14,6 +14,11 @@ It reuses the same memory paging mechanism I've implemented in Zeta SBC V2, but 
   * Zilog Z80 CTC - Programmable timer used for periodic interrupts and (optionally) for generating UART clock
   * Zilog Z80 SIO - Dual channel serial interface, used for console and for connecting to other peripheral devices
 * Bus: [RC2014](https://rc2014.co.uk/) compatible
+* Microprocessor Supervisor:
+  * Reset generation
+  * SRAM battery backup
+  * Power failure NMI
+  * Watchdog (optional)
 
 ## Hardware Documentation
 
