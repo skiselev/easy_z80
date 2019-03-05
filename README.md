@@ -3,7 +3,7 @@ An easy to build Zilog Z80 based single board computer
 
 ## Introduction
 My son Max asked me what does it take to build a computer, and whether he can design and build one himself. This project is our attempt to design and build a simple, easy to understand, yet capable single board computer.
-It reuses the same memory paging mechanism I've implemented in Zeta SBC V2, but uses Zilog Z80 peripheral ICs to make a consistent Zilog based design.
+It reuses the same memory paging mechanism I've implemented in Zeta SBC V2. It uses Zilog Z80 SIO/O and Z80 CTC peripheral ICs and implements daisy chain mode 2 interrupt configuration.
 
 ![Easy Z80 PCB Rendering](images/Easy_Z80-Assembled.jpg)
 
