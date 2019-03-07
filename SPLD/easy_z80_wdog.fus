@@ -44,7 +44,7 @@ Pin 15 = PGENWR       XOR = 0   AC1 = 0
  32  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  33  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  34  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx -x--
- 35  -x-- x--- x--- -x-- -x-- -x-- -xx- xxxx xxxx xxxx xxxx
+ 35  -x-- x--- x--- x--- -x-- x--- x--x xxxx xxxx xxxx xxxx
  36  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  37  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  38  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
