@@ -175,4 +175,7 @@ Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD f
   * Top silkscreen: RR1 reference and value are not visible. It should read "RR1, 4.7k"
   * Bottom silkscreen on JP1 and JP2 covers the trace connections, so they are not easily visible
   * Bottom silkscreen: No project URL. Should be [github.com/skiselev/easy_z80](https://github.com/skiselev/easy_z80)
-  * Board will not reset when C15 is populated. Workaround: Do not populate this capacitor.
+  * Board will not reset when C15 is populated. Workaround: Do not populate this capacitor
+  
+## Wishlist
+* Add pull-ups on the data bus to support extension boards that were not designed for Z80 interrupt mode 2
