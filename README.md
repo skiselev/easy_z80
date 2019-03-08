@@ -1,6 +1,21 @@
 # Easy Z80
 An easy to build Zilog Z80 based single board computer
 
+## Table of Content
+* [Introduction](#introduction)
+* [Specifications](#specifications)
+* [Hardware Documentation](#hardware-documentation)
+  * [Schematic and PCB Layout](#schematic-and-pcb-layout)
+  * [Connectors and Jumpers](#connectors-and-jumpers)
+  * [Bill of Materials](#bill-of-materials)
+* [Firmware Documentation](#firmware-documentation)
+  * [BIOS and OS](#bios-and-os)
+  * [SPLD Fuse Map](#spld-fuse-map)
+* [Release Notes](#release-notes)
+  * [Changes](#changes)
+  * [Known Issues](#known-issues)
+  * [Wishlist](#wishlist)
+
 ## Introduction
 My son Max asked me what does it take to build a computer, and whether he can design and build one himself. This project is our attempt to design and build a simple, easy to understand, yet capable single board computer.
 It reuses the same memory paging mechanism I've implemented in Zeta SBC V2. It uses Zilog Z80 SIO/O and Z80 CTC peripheral ICs and implements daisy chain mode 2 interrupt configuration.
@@ -113,7 +128,9 @@ Position        | Description
 *1-2 (default)* | 1.8432 MHz (115200 bps if using x16 mode)
 2-3             | Programmable using CTC channel 1
 
-### Bill of Materials - Version 1.0
+### Bill of Materials
+
+#### Version 1.0
 
 [Easy Z80 project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=f16751cb33) - View and order all components except of the PCB.
 
@@ -166,13 +183,18 @@ The current plan is to use [RomWBW](https://github.com/wwarthen/RomWBW), which i
 
 Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD fuse map](SPLD/easy_z80.jed) and the [SPLD source code](SPLD/easy_z80.pld) are provided in [SPLD](SPLD) directory of this repository.
 
-## Changes
+## Release Notes
+
+### Changes
 * Version 1.0
   * Initial version
 
-## Known Issues
+### Known Issues
 * Version 1.0
   * Top silkscreen: RR1 reference and value are not visible. It should read "RR1, 4.7k"
   * Bottom silkscreen on JP1 and JP2 covers the trace connections, so they are not easily visible
   * Bottom silkscreen: No project URL. Should be [github.com/skiselev/easy_z80](https://github.com/skiselev/easy_z80)
-  * Board will not reset when C15 is populated. Workaround: Do not populate this capacitor.
+  * Board will not reset when C15 is populated. Workaround: Do not populate this capacitor
+  
+### Wishlist
+* Add pull-ups on the data bus to support extension boards that were not designed for Z80 interrupt mode 2
