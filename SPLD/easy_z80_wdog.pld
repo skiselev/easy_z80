@@ -8,7 +8,7 @@ A7	RAMCSI	WDOG	MA19	PGENWR	PAGEWR	ROMCS	SIOCS	CTCCS	VCC
 
 /RAMCSI = /MREQ *  MA19
 
-/CTCCS  = /IORQ * M1 * /A7 * /A6 *  A5 * /A4 * /A3 * /A2
+/CTCCS  = /IORQ * M1 *  A7 * /A6 * /A5 * /A4 *  A3 * /A2
 
 /SIOCS  = /IORQ * M1 *  A7 * /A6 * /A5 * /A4 * /A3 * /A2
 
@@ -27,7 +27,7 @@ It implements the following functions:
 2. RAM chip select - RAMCSI. This signal is activated for memory accesses to
    0x80000 - 0xFFFFF address range
 3. CTC chip select - CTCCS. This signal is activated for I/O accesses to
-   ports in 0x20-0x23 range
+   ports in 0x88-0x8B range
 4. SIO chip select - SIOCS. This signal is activated for I/O accesses to
    ports in 0x80-0x83 range
 5. Page register write - PAGEWR. This signal is activated by I/O writes

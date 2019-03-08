@@ -1,7 +1,7 @@
 
 
 Pin 19 = CTCCS        XOR = 0   AC1 = 0
-  0  -x-- ---- x--- -x-- -x-- -x-- x--- -x-x xxxx xxxx xxxx
+  0  -x-- ---- x--- -x-- x--- -x-- -x-- -xx- xxxx xxxx xxxx
   1  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
   2  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
   3  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
