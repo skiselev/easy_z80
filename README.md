@@ -147,8 +147,8 @@ Integrated Circuit | U5        | 512 KiB Flash ROM, 32 pin DIP - SST39SF040  | 1
 Integrated Circuit | U6        | Microprocessor Supervisory Circuit - MAX693 | 1        | Mouser [584-ADM693ANZ](https://www.mouser.com/ProductDetail/584-ADM693ANZ); Possible alternatives: MAX693, LTC693, ADM691, MAX691, LTC691, ADM695, MAX695, LTC965, LTC1235
 Integrated Circuit | U7, U8    | Dual RS-232 Driver/Receiver - MAX232A       | 2        | Mouser [595-TRS232IN](https://www.mouser.com/ProductDetail/595-TRS232IN)
 Integrated Circuit | U9        | Simple Programmable Logic Device - ATF16V8B | 1        | Mouser [556-AF16V8B15PU](https://www.mouser.com/ProductDetail/556-AF16V8B15PU)
-Integrated Circuit | U10, U11  | 4-by-4 Register File - 74HCT670             | 2        | Mouser [595-CD74HC670E](https://www.mouser.com/ProductDetail/595-CD74HC670E)
-Integrated Circuit | U12       | Dual Flip Flop - 74HCT74                    | 1        | Mouser [595-SN74HC74N](https://www.mouser.com/ProductDetail/595-SN74HC74N)
+Integrated Circuit | U10, U11  | 4-by-4 Register File - 74HC670              | 2        | Mouser [595-CD74HC670E](https://www.mouser.com/ProductDetail/595-CD74HC670E)
+Integrated Circuit | U12       | Dual Flip Flop - 74HC74                     | 1        | Mouser [595-SN74HC74N](https://www.mouser.com/ProductDetail/595-SN74HC74N)
 Oscillator         | QG1       | 10 MHz, CMOS oscillator, Half Can           | 1        | Mouser [774-MXO45HS-3C-10.0](https://www.mouser.com/ProductDetail/774-MXO45HS-3C-10.0)
 Oscillator         | QG2       | 1.8432 MHz, CMOS oscillator, Half Can       | 1        | Mouser [774-MXO45HS-3C-1.8](https://www.mouser.com/ProductDetail/774-MXO45HS-3C-1.8)
 LED                | D1        | 3 mm, green LED indicator                   | 1        | Mouser [859-LTL-4231N](https://www.mouser.com/ProductDetail/859-LTL-4231N)
@@ -195,6 +195,7 @@ Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD f
   * Bottom silkscreen on JP1 and JP2 covers the trace connections, so they are not easily visible
   * Bottom silkscreen: No project URL. Should be [github.com/skiselev/easy_z80](https://github.com/skiselev/easy_z80)
   * Board will not reset when C15 is populated. Workaround: Do not populate this capacitor
+  * Schematic and top silkscreen: Use 74HC series instead of 74HCT
   
 ### Wishlist
 * Add pull-ups on the data bus to support extension boards that were not designed for Z80 interrupt mode 2
