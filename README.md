@@ -136,7 +136,7 @@ Position        | Description
 
 [Easy Z80 project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=f16751cb33) - View and order all components except of the PCB.
 
-[Easy Z80 project on OSH Park](https://oshpark.com/shared_projects/4onyIbSB) - View and order the PCB.
+[Easy Z80 project on OSH Park](https://oshpark.com/shared_projects/Rt7SBcRg) - View and order the PCB.
 
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
