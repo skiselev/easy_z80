@@ -39,9 +39,9 @@ It reuses the same memory paging mechanism I've implemented in Zeta SBC V2. It u
 
 ### Schematic and PCB Layout
 
-[Schematic - Version 1.0](KiCad/Easy_Z80-Schematic-1.0.pdf)
+[Schematic - Version 1.1](KiCad/Easy_Z80-Schematic-1.1.pdf)
 
-[PCB Layout - Version 1.0](KiCad/Easy_Z80-Board-1.0.pdf)
+[PCB Layout - Version 1.1](KiCad/Easy_Z80-Board-1.1.pdf)
 
 ### Connectors and Jumpers
 
@@ -186,6 +186,14 @@ Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD f
 ## Release Notes
 
 ### Changes
+* Version 1.1
+  * Add pull-up resistors on data bus (RN4 - 4.7k) to support interrupt mode 0
+  * Use 74HC series instead of 74HCT
+  * Remove C15
+  * Fix silkscreen:
+    * Make RN1 reference and value visible
+    * Update silkscreen of headers footprints, so that JP1 and JP2 don't cover the traces
+    * Add project URL to the bottom silkscreen
 * Version 1.0
   * Initial version
 
