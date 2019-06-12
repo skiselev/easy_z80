@@ -37,6 +37,8 @@ It reuses the same memory paging mechanism I've implemented in Zeta SBC V2. It u
 
 ## Hardware Documentation
 
+For the version 1.0 schematic, PCB layout, and bill of materials please refer to [tag v1.0](https://github.com/skiselev/easy_z80/tree/v1.0)
+
 ### Schematic and PCB Layout
 
 [Schematic - Version 1.1](KiCad/Easy_Z80-Schematic-1.1.pdf)
@@ -157,10 +159,10 @@ Connector          | J1        | DC Power Jack, 2mm                          | 1
 Connector          | J2, J3    | Sub-D DE9M, Right Angle, PCB mount          | 2        | Mouser [806-K22X-E9P-N-99](https://www.mouser.com/ProductDetail/806-K22X-E9P-N-99)
 Connector          | J4        | 2 Pin Header with Friction Lock             | 1        | Mouser [571-6404562](https://www.mouser.com/ProductDetail/571-6404562)
 Pin Header         | J5 - J7   | 40x2 Pin Header, 2.54 mm Pitch, Right Angle | 1        | Mouser [571-9-103326-0](https://www.mouser.com/ProductDetail/571-9-103326-0)
-Capacitor          | C1 - C14, C16 - C23  | 0.1 uF, MLCC, 5 mm Pitch                    | 22       | Mouser [594-K104K15X7RF53H5](https://www.mouser.com/ProductDetail/594-K104K15X7RF53H5)
-Capacitor          | C15       | Do not populate                             | 1        | Do not populate this capacitor
+Capacitor          | C1 - C14, C16 - C23  | 0.1 uF, MLCC, 5 mm Pitch         | 22       | Mouser [594-K104K15X7RF53H5](https://www.mouser.com/ProductDetail/594-K104K15X7RF53H5)
 Capacitor          | C24       | 47 uF, 25V, Aluminum Organic Polymer        | 1        | Mouser [80-A750EK476M1EAAE40](https://www.mouser.com/ProductDetail/80-A750EK476M1EAAE40)
-Resistor Array     | RR1 - RR3 | 4.7 k, bussed, 5 pin SIP                    | 3        | Mouser [652-4605X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4605X-AP1-472LF)
+Resistor Array     | RN1 - RN3 | 4.7 k, bussed, 5 pin SIP                    | 3        | Mouser [652-4605X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4605X-AP1-472LF)
+Resistor Array     | RN4       | 4.7 k, bussed, 9 pin SIP                    | 1        | Mouser [652-4609X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4609X-AP1-472LF)
 Resistor           | R1        | 470 ohm, axial                              | 1        | Mouser [603-MFR-25FBF52-470R](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-470R) 
 Resistor           | R2 - R4   | 10 kohm, 1% tolerance, axial                | 3        | Mouser [603-MFR-25FRF5210K](https://www.mouser.com/ProductDetail/603-MFR-25FRF5210K)
 Resistor           | R5        | 29.4 kohm, 1% tolerance, axial              | 1        | Mouser [603-MFR-25FBF52-29K4](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-29K4)
@@ -187,10 +189,11 @@ Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD f
 
 ### Changes
 * Version 1.1
-  * Add pull-up resistors on data bus (RN4 - 4.7k) to support interrupt mode 0
+  * Add pull-up resistors on the data bus (RN4 - 4.7k) to support Z80 interrupt mode 0
   * Use 74HC series instead of 74HCT
   * Remove C15
-  * Fix silkscreen:
+  * Use RN reference for resistor arrays instead of RR
+  * Update silkscreen:
     * Make RN1 reference and value visible
     * Update silkscreen of headers footprints, so that JP1 and JP2 don't cover the traces
     * Add project URL to the bottom silkscreen
@@ -206,4 +209,5 @@ Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD f
   * Schematic and top silkscreen: Use 74HC series instead of 74HCT
   
 ### Wishlist
-* Add pull-ups on the data bus to support extension boards that were not designed for Z80 interrupt mode 2
+* Version 1.0
+  * Add pull-ups on the data bus to support extension boards that were not designed for Z80 interrupt mode 2
