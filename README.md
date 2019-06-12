@@ -132,7 +132,7 @@ Position        | Description
 
 ### Bill of Materials
 
-#### Version 1.0
+#### Version 1.1
 
 [Easy Z80 project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=f16751cb33) - View and order all components except of the PCB.
 
