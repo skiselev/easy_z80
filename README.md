@@ -179,7 +179,7 @@ Oscillator Socket  | QG1, QG2  | 4 pin DIP, Half Can                         | 2
 
 ### BIOS and OS
 
-The current plan is to use [RomWBW](https://github.com/wwarthen/RomWBW), which includes BIOS and CP/M-80 2.2, Z-System. It also should be possible to run [FUZIX](https://github.com/EtchedPixels/FUZIX) on this board.
+Easy Z80 is supported by [RomWBW](https://github.com/wwarthen/RomWBW) [v2.9.1](https://github.com/wwarthen/RomWBW/releases/tag/v2.9.1) and later. RomWBW includes BIOS, CP/M-80 2.2, Z-System, and a collection of utilities. It also should be possible to run [FUZIX](https://github.com/EtchedPixels/FUZIX) on this board.
 
 ### SPLD Fuse Map
 
