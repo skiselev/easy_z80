@@ -140,7 +140,7 @@ Position        | Description
 
 Component type     | Reference | Description                                 | Quantity | Possible sources and notes 
 ------------------ | --------- | ------------------------------------------- | -------- | --------------------------
-PCB                |           | Easy Z80 PCB - Version 1.0                  | 1        | Refer to the [RetroBrew Computers Board Inventory](https://www.retrobrewcomputers.org/doku.php?id=boardinventory#minimal_8085_z80_single_board_computer) page for ordering information, or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
+PCB                |           | Easy Z80 PCB - Version 1.1                  | 1        | Refer to the [RetroBrew Computers Board Inventory](https://www.retrobrewcomputers.org/doku.php?id=boardinventory#minimal_8085_z80_single_board_computer) page for ordering information, or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
 Integrated Circuit | U1        | Z80 CPU, CMOS, 40 pin DIP - Z84C00xxPEG     | 1        | Mouser [692-Z84C0010PEG](https://www.mouser.com/ProductDetail/692-Z84C0010PEG)
 Integrated Circuit | U2        | Z80 CTC, CMOS, 28 pin DIP - Z84C30xxPEG     | 1        | Mouser [692-Z84C3010PEG](https://www.mouser.com/ProductDetail/692-Z84C3010PEG)
 Integrated Circuit | U3        | Z80 SIO/0, CMOS, 28 pin DIP - Z84C40xxPEG   | 1        | Mouser [692-Z84C4010PEG](https://www.mouser.com/ProductDetail/692-Z84C4010PEG)
