@@ -70,6 +70,10 @@ Pin    | Signal Name | Description
 Shield	| DE9 Shield	 | Connected to the SBC GND signal
 
 #### J4 - NVRAM Battery
+Connect 3V battery for SRAM backup to this connector.
+
+**Important: If the SRAM battery backup is not desired, short J4 with a jumper. Do not leave this connector open.**
+
 Pin | Signal Name | Description
 --- | ----------- | -----------
 1  	| VBAT        | Positive terminal - +3V
