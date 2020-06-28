@@ -147,7 +147,7 @@ Component type     | Reference | Description                                 | Q
 PCB                |           | Easy Z80 PCB - Version 1.1                  | 1        | Refer to the [RetroBrew Computers Board Inventory](https://www.retrobrewcomputers.org/doku.php?id=boardinventory#minimal_8085_z80_single_board_computer) page for ordering information, or order from a PCB manufacturer of your choice using provided Gerber or KiCad files
 Integrated Circuit | U1        | Z80 CPU, CMOS, 40 pin DIP - Z84C00xxPEG     | 1        | Mouser [692-Z84C0010PEG](https://www.mouser.com/ProductDetail/692-Z84C0010PEG)
 Integrated Circuit | U2        | Z80 CTC, CMOS, 28 pin DIP - Z84C30xxPEG     | 1        | Mouser [692-Z84C3010PEG](https://www.mouser.com/ProductDetail/692-Z84C3010PEG)
-Integrated Circuit | U3        | Z80 SIO/0, CMOS, 28 pin DIP - Z84C40xxPEG   | 1        | Mouser [692-Z84C4010PEG](https://www.mouser.com/ProductDetail/692-Z84C4010PEG)
+Integrated Circuit | U3        | Z80 SIO/0, CMOS, 40 pin DIP - Z84C40xxPEG   | 1        | Mouser [692-Z84C4010PEG](https://www.mouser.com/ProductDetail/692-Z84C4010PEG)
 Integrated Circuit | U4        | 512 KiB SRAM, 32 pin DIP - AS6C4008         | 1        | Mouser [913-AS6C4008-55PCN](https://www.mouser.com/ProductDetail/913-AS6C4008-55PCN)
 Integrated Circuit | U5        | 512 KiB Flash ROM, 32 pin DIP - SST39SF040  | 1        | Mouser [804-39SF0407CPHE](https://www.mouser.com/ProductDetail/804-39SF0407CPHE)
 Integrated Circuit | U6        | Microprocessor Supervisory Circuit - MAX693 | 1        | Mouser [584-ADM693ANZ](https://www.mouser.com/ProductDetail/584-ADM693ANZ); Possible alternatives: MAX693, LTC693, ADM691, MAX691, LTC691, ADM695, MAX695, LTC965, LTC1235
@@ -187,7 +187,7 @@ Easy Z80 is supported by [RomWBW](https://github.com/wwarthen/RomWBW) [v2.9.1](h
 
 ### SPLD Fuse Map
 
-Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD fuse map](SPLD/easy_z80.jed) and the [SPLD source code](SPLD/easy_z80.pld) are provided in [SPLD](SPLD) directory of this repository.
+Easy Z80 uses an ATF16V8/GAL16V8 SPLD (U9) for address decode logic. The [SPLD fuse map](SPLD/easy_z80_no_wdog.jed) and the [SPLD source code](SPLD/easy_z80_no_wdog.pld) are provided in [SPLD](SPLD) directory of this repository.
 
 ## Release Notes
 
