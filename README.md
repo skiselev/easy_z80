@@ -104,10 +104,10 @@ J5-19 | /M1         | Machine Cycle One; Output | J6-3| /RFSH | DRAM refresh; Ou
 J5-20 | /RESET      | Reset; Output       | J6-4 | N/C         | Not connected
 J5-21 | CPU_CLK     | CPU Clock; Output   | J6-5 | UART_CLK    | UART Clock (1.8432 MHz); Output
 J5-22 | /INT        | Interrupt; Input    | J6-6 | /BUSACK     | DMA Bus Acknowledge; Output
-J5-23 | /MREQ       | Memory Request; Output | J6-8 | /HALT    | Halt; Output
-J5-24 | /WR         | Write Request; Output | J6-9 | /WAIT     | Wait; Input
-J5-25 | /RD         | Read Request; Output | J6-10 | /NMI      | Non-maskable Interrupt; Input
-J5-26 | /IORQ       | Input/Output Request; Output | |         |
+J5-23 | /MREQ       | Memory Request; Output | J6-7 | /HALT    | Halt; Output
+J5-24 | /WR         | Write Request; Output | J6-8 | /BUSREQ   | DMA Bus Request; Input
+J5-25 | /RD         | Read Request; Output | J6-9 | /WAIT      | Wait; Input
+J5-26 | /IORQ       | Input/Output Request; Output | J6-10 | /NMI | Non-maskable Interrupt; Input
 J5-27 | D0          | Data D0; Input/Output |    |             |
 J5-28 | D1          | Data D1; Input/Output |    |             |
 J5-29 | D2          | Data D2; Input/Output |    |             |
