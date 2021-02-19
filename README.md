@@ -167,7 +167,7 @@ Capacitor          | C1 - C14, C16 - C23  | 0.1 uF, MLCC, 5 mm Pitch         | 2
 Capacitor          | C24       | 47 uF, 25V, Aluminum Organic Polymer        | 1        | Mouser [80-A750EK476M1EAAE40](https://www.mouser.com/ProductDetail/80-A750EK476M1EAAE40)
 Resistor Array     | RN1 - RN3 | 4.7 k, bussed, 5 pin SIP                    | 3        | Mouser [652-4605X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4605X-AP1-472LF)
 Resistor Array     | RN4       | 4.7 k, bussed, 9 pin SIP                    | 1        | Mouser [652-4609X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4609X-AP1-472LF)
-Resistor           | R1        | 470 ohm, axial                              | 1        | Mouser [603-MFR-25FBF52-470R](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-470R) 
+Resistor           | R1        | 470 ohm, axial                              | 1        | Mouser [603-MFR-25FRF52-470R](https://www.mouser.com/ProductDetail/603-MFR-25FRF52-470R) 
 Resistor           | R2 - R4   | 10 kohm, 1% tolerance, axial                | 3        | Mouser [603-MFR-25FRF5210K](https://www.mouser.com/ProductDetail/603-MFR-25FRF5210K)
 Resistor           | R5        | 29.4 kohm, 1% tolerance, axial              | 1        | Mouser [603-MFR-25FBF52-29K4](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-29K4)
 Trimmer Resistor   | RV1       | 2 kohm, through hole                        | 1        | Mouser [652-3362P-1-202LF](https://www.mouser.com/ProductDetail/652-3362P-1-202LF)
